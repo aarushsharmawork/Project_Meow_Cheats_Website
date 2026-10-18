@@ -43,6 +43,13 @@ body{overflow-x:clip}
 .setup-steps.is-playing .setup-windowed .setup-chrome>span{animation-play-state:running}
 @keyframes window-controls-cue{0%,100%{transform:translate(2px,2px);opacity:.6}50%{transform:translate(-3px,-3px);opacity:1}}
 .setup-steps{grid-template-columns:repeat(4,minmax(0,1fr))}
-.setup-steps>article:last-child{grid-column:1/-1;width:calc((100% - 60px)/4);justify-self:center}
-@media(max-width:1050px){.setup-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.setup-steps>article:last-child{width:calc((100% - 25px)/2)}}
-@media(max-width:760px){.setup-steps{grid-template-columns:1fr}.setup-steps>article:last-child{grid-column:auto;width:100%;justify-self:stretch}}
+
+@media(max-width:1050px){.setup-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.setup-steps{grid-template-columns:1fr}}
+
+/* Step five owns a full row; its illustration and copy share the page center. */
+.setup-steps>article.setup-final{grid-column:1/-1;justify-self:stretch;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;margin-inline:auto}
+.setup-final>.step-preview{width:min(100%,340px);flex-shrink:0;margin-left:auto;margin-right:auto}
+.setup-steps .setup-final>.step-number{margin-left:auto;margin-right:auto}
+.setup-steps .setup-final>h3{width:100%;text-align:center}
+.setup-steps .setup-final>p{width:min(100%,380px);max-width:380px;text-align:center;margin-left:auto;margin-right:auto}
