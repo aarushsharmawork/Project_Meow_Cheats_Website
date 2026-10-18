@@ -53,3 +53,6 @@ body{overflow-x:clip}
 .setup-steps .setup-final>.step-number{margin-left:auto;margin-right:auto}
 .setup-steps .setup-final>h3{width:100%;text-align:center}
 .setup-steps .setup-final>p{width:min(100%,380px);max-width:380px;text-align:center;margin-left:auto;margin-right:auto}
+
+.setup-steps>article.setup-final{padding-top:52px;padding-bottom:24px}
+@media(max-width:760px){.setup-steps>article.setup-final{padding-top:30px;padding-bottom:20px}}
