@@ -63,3 +63,10 @@ body{overflow-x:clip}
 .minimise-cue{position:absolute;left:0;top:0;width:72px;height:48px;fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;animation:minimise-cue-point 2.6s ease-in-out infinite;animation-play-state:paused}
 .setup-steps.is-playing .minimise-cue{animation-play-state:running}
 @keyframes minimise-cue-point{0%,100%{transform:translate(2px,2px);opacity:.65}50%{transform:translate(-2px,-2px);opacity:1}}
+
+/* macOS traffic lights, with a compact cue aimed at the green control. */
+.setup-windowed .setup-chrome>i:nth-child(1){background:#ff5f57}
+.setup-windowed .setup-chrome>i:nth-child(2){background:var(--accent)}
+.setup-windowed .setup-chrome>i:nth-child(3){background:#28c840}
+.setup-windowed .minimise-cue{stroke-width:1.6}
+@keyframes minimise-cue-point{0%,100%{transform:translate(1px,1px);opacity:.7}50%{transform:translate(-1px,-1px);opacity:1}}
