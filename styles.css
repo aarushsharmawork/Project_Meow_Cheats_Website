@@ -70,3 +70,6 @@ body{overflow-x:clip}
 .setup-windowed .setup-chrome>i:nth-child(3){background:#28c840}
 .setup-windowed .minimise-cue{stroke-width:1.6}
 @keyframes minimise-cue-point{0%,100%{transform:translate(1px,1px);opacity:.7}50%{transform:translate(-1px,-1px);opacity:1}}
+
+/* Explicit SVG fills keep the window-control colours independent of icon styles. */
+.setup-windowed .window-traffic-lights{position:static;display:block;flex:0 0 22px;width:22px;height:6px;stroke:none;overflow:visible}
