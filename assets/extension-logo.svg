@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1.5 3 29 29" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <defs>
+    <g id="cat">
+      <path d="M6 14 5 5l8 5a16 16 0 0 1 6 0l8-5-1 9a11 11 0 1 1-20 0Z"/>
+      <path d="M10 17h2m8 0h2m-8 5 2 1 2-1"/>
+    </g>
+  </defs>
+  <use href="#cat" stroke="#202020" stroke-width="3.8"/>
+  <use href="#cat" stroke="#ededed" stroke-width="2.3"/>
+</svg>
