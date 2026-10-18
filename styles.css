@@ -56,3 +56,10 @@ body{overflow-x:clip}
 
 .setup-steps>article.setup-final{padding-top:52px;padding-bottom:24px}
 @media(max-width:760px){.setup-steps>article.setup-final{padding-top:30px;padding-bottom:20px}}
+
+/* Aim from below-right toward the middle macOS window button. */
+.setup-windowed .setup-chrome{position:relative;height:48px;align-items:flex-start}
+.setup-windowed .setup-chrome>i:nth-child(2){background:var(--accent);box-shadow:0 0 8px var(--accent-soft)}
+.minimise-cue{position:absolute;left:0;top:0;width:72px;height:48px;fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;animation:minimise-cue-point 2.6s ease-in-out infinite;animation-play-state:paused}
+.setup-steps.is-playing .minimise-cue{animation-play-state:running}
+@keyframes minimise-cue-point{0%,100%{transform:translate(2px,2px);opacity:.65}50%{transform:translate(-2px,-2px);opacity:1}}
